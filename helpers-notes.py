@@ -1233,6 +1233,22 @@ pd.DataFrame({"Eyaletler" : df.index, "Kumeler": cluster.fit_predict(df)})[0:10]
 df["kume_no"] = cluster.fit_predict(df)
 df.head()
 #%%
+
+# 14-3 Anomaly Detection
+pip install pycaret # yeni bir environment olustur ve oraya yukle hata almamak icin
+#import the dataset from pycaret repository
+from pycaret.datasets import get_data
+anomaly = get_data('anomaly')
+
+#import anomaly detection module
+from pycaret.anomaly import *
+
+#intialize the setup
+exp_ano = setup(anomaly)
+
+
+
+
 #%%
 # 15 DEEP LEARNING
 # 15-1 ANN .ilk deep learning projemizi basit seviyede yapalim
