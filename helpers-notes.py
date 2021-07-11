@@ -89,7 +89,7 @@
 # 12-12 CatBoost
 ''' 13 TUM MODELLERIN KARSILASTIRILMASI '''
 # 13 TUM MODELLERIN KARSILASTIRILMASI
-# Tum modellerin ogrendiklerini birlestirip yeni bir skor elde etmek
+#13-2 Tum modellerin ogrendiklerini birlestirip yeni bir skor elde etmek
 ''' ///// UNSUPERVISED LEARNING \\\\\ '''
 ''' 14 UNSUPERVISED LEARNING '''
 # 14-1 K-means ile kendi icinde homojen ama birbirinden farkli kumeler olusturma
@@ -1163,7 +1163,7 @@ class StackingAveragedModels(BaseEstimator, RegressorMixin, TransformerMixin):
             np.column_stack([model.predict(X) for model in base_models]).mean(axis=1)
             for base_models in self.base_models_ ])
         return self.meta_model_.predict(meta_features)
-        
+
 stacked_averaged_models = StackingAveragedModels(base_models = (ENet, GBoost, KRR),
                                                  meta_model = lasso)
 
