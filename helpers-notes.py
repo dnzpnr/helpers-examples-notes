@@ -44,7 +44,7 @@
 # 8-2 Normalizasyon
 # 8-3 Eger belli bir aralikta donusturme yapmak istiyorsak
 # 8-4 Butun sutunlara Label encoder
-''' 9- PCA ANALIZI (HANGI DEGISKENLERI MODELE ALMALIYIM?)'''
+''' 9- PCA ANALIZI '''
 # 9-1 PCA
 
 ''' ///// SUPERVISED LEARNING \\\\\ '''
